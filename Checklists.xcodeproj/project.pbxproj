@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5C4FA9421F31D08B00AF1BC1 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4FA9411F31D08B00AF1BC1 /* ItemDetailViewController.swift */; };
+		5CA08BEA1F3C42ED00A560FB /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 5CA08BE91F3C42EC00A560FB /* README.md */; };
 		5CB7AE4A1F1F4F4F009D1A36 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB7AE491F1F4F4F009D1A36 /* ChecklistItem.swift */; };
 		5CE860671F0F4EA300DCCF38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE860661F0F4EA300DCCF38 /* AppDelegate.swift */; };
 		5CE860691F0F4EA300DCCF38 /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE860681F0F4EA300DCCF38 /* ChecklistViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		5C4FA9411F31D08B00AF1BC1 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ItemDetailViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		5CA08BE91F3C42EC00A560FB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5CB7AE491F1F4F4F009D1A36 /* ChecklistItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
 		5CE860631F0F4EA300DCCF38 /* Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE860661F0F4EA300DCCF38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		5CE860651F0F4EA300DCCF38 /* Checklists */ = {
 			isa = PBXGroup;
 			children = (
+				5CA08BE91F3C42EC00A560FB /* README.md */,
 				5CE860661F0F4EA300DCCF38 /* AppDelegate.swift */,
 				5CE860681F0F4EA300DCCF38 /* ChecklistViewController.swift */,
 				5CE8606A1F0F4EA300DCCF38 /* Main.storyboard */,
@@ -145,6 +148,7 @@
 			files = (
 				5CE860691F0F4EA300DCCF38 /* ChecklistViewController.swift in Sources */,
 				5C4FA9421F31D08B00AF1BC1 /* ItemDetailViewController.swift in Sources */,
+				5CA08BEA1F3C42ED00A560FB /* README.md in Sources */,
 				5CB7AE4A1F1F4F4F009D1A36 /* ChecklistItem.swift in Sources */,
 				5CE860671F0F4EA300DCCF38 /* AppDelegate.swift in Sources */,
 			);
