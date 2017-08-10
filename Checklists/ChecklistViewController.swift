@@ -31,33 +31,36 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
         // to get the array object, you have to construct it
         // () tell Swift to make the new array object.
         items = [ChecklistItem]()
-        
-        let row0item = ChecklistItem()
-        row0item.text = "Walk the dog"
-        row0item.checked = false
-        items.append(row0item)
-        
-        let row1item = ChecklistItem()
-        row1item.text = "Brush my teeth"
-        row1item.checked = true
-        items.append(row1item)
-        
-        let row2item = ChecklistItem()
-        row2item.text = "Learn iOS development"
-        row2item.checked = true
-        items.append(row2item)
-        
-        let row3item = ChecklistItem()
-        row3item.text = "Soccer practive"
-        row3item.checked = false
-        items.append(row3item)
-        
-        let row4item = ChecklistItem()
-        row4item.text = "Eat ice cream"
-        row4item.checked = true
-        items.append(row4item)
-        
         super.init(coder: aDecoder)
+        loadChecklistItems()
+        
+        
+        //let row0item = ChecklistItem()
+        //row0item.text = "Walk the dog"
+        //row0item.checked = false
+        //items.append(row0item)
+        
+        //let row1item = ChecklistItem()
+        //row1item.text = "Brush my teeth"
+        //row1item.checked = true
+        //items.append(row1item)
+        
+        //let row2item = ChecklistItem()
+        //row2item.text = "Learn iOS development"
+        //row2item.checked = true
+        //items.append(row2item)
+        
+        //let row3item = ChecklistItem()
+        //row3item.text = "Soccer practive"
+        //row3item.checked = false
+        //items.append(row3item)
+        
+        //let row4item = ChecklistItem()
+        //row4item.text = "Eat ice cream"
+        //row4item.checked = true
+        //items.append(row4item)
+        
+        //super.init(coder: aDecoder)
         
         // print document directory
         print("Documents folder is \(documentsDirectory())")
@@ -65,7 +68,16 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
         
     }
     
-    
+    func loadChecklistItems() {
+        // 1
+        let path = dataFilePath()
+        //2 
+        if let data = try? Data(contentsOf: path) {
+            let unarchiver = NSKeyedUnarchiver(forReadingWith: data)
+            items = unarchiver.decodeObject(forKey: "ChecklistItems") as! [ChecklistItem]
+            unarchiver.finishDecoding()
+        }
+    }
 
     override func tableView(_ tableView: UITableView,
                             numberOfRowsInSection section: Int) -> Int {
